@@ -3,18 +3,23 @@
 \usepackage[utf8x]{inputenc}
 \usepackage{listings}
 \usepackage{subfig}
-\title{LS Genio Platform}
-\subtitle{Piattaforma per il monitoraggio di macchine utensili con integrazione a software ERP Microsoft Dynamics NAV}
-\author{Vincenzo Nucci e Matteo Tiberi}
+%\title{LS Genio Platform}
+%\subtitle{Piattaforma per il monitoraggio di macchine utensili con integrazione a software ERP Microsoft Dynamics NAV}
+%\author{Vincenzo Nucci e Matteo Tiberi}
 %\author{Matteo Tiberi}
-\institute{Università di Camerino}
+%\institute{Università di Camerino}
 \date{}
 \begin{document}
 	
 	\begin{frame}
 	\centering
-	\includegraphics[scale=0.7]{images/stemma.png}\par
+	\includegraphics[scale=0.25]{images/frontespizio-beamer.png}\par
 	\usebeamertemplate{title page}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Sommario}
+	Obiettivo di questa tesi è stato la realizzazione di una piattaforma REST che restituisca misurazioni fatte da sensori collegati a macchinari utensili. La natura delle misurazioni è descritta da una ontologia. Parte del progetto è stata l'integrazione di questi servizi con il gestionale NAV. Infine la piattaforma deve visualizzare dati attraverso un grafico dinamico e poter applicare un controllo di superamento di una soglia. Tutti gli obiettivi prefissati sono stati raggiunti, affrontando piccole difficoltà implementative, grazie ai software utilizzati.
 \end{frame}
 
 \begin{frame}
@@ -43,11 +48,6 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Pagina web per il grafico del monitoraggio}
-\includegraphics[width=1\textwidth]{images/grafico-zk.png}
-\end{frame}
-
-\begin{frame}
 \frametitle{Pagina catalogo Smart Object}
 \includegraphics[width=1\textwidth]{images/SmartObjectsPlatform.png}
 \end{frame}
@@ -63,125 +63,19 @@
 \end{frame}
 
 \begin{frame}
+\frametitle{Pagina web per il grafico del monitoraggio}
+\includegraphics[width=1\textwidth]{images/grafico-zk.png}
+\end{frame}
+
+\begin{frame}
 \frametitle{Codice Job Flink}
 \includegraphics[width=1\textwidth]{images/flink-job.png}
 \end{frame}
 
+\begin{frame}
+	\frametitle{Conclusioni}
+	Questo progetto ha mostrato quanta innovazione e benefici porti alle aziende implementare le novità introdotte dall’Industria 4.0, tra le quali i Big Data rappresentano la componente principale.
+\end{frame}
+
 %-------------------------inizio client-----------------------------
-\begin{frame}
-\frametitle{Client per la piattaforma}
-\begin{itemize}
-\item Sviluppato su Microsoft Dynamics NAV nonostante diverse lacune dell'ambiente
-\begin{itemize}
-\item Mancata possibilità di consumo diretto di servizi REST
-\item Mancata possibilità di gestione del formato JSON
-\item Difficoltà nell'interazione con software esterni non Microsoft
-\end{itemize}
-\item Risoluzione tramite sviluppo di un client C\#
-\begin{itemize}
-\item con chiamata dei servizi REST, serializzazione e deserializzazione del JSON
-\item in conformità con le classi della piattaforma tramite Apache Avro
-\item integrato poi in NAV tramite dll 
-\end{itemize}
-\item Sviluppo di un "setup" per impostare le chiamate ai servizi su NAV
-\begin{itemize}
-\item svolto mediante 2 approcci (PLC e Machine Center)
-\item con trattamento dei dati per l'ambiente Navision
-\item evitando di prendere valori già inseriti o errati
-\end{itemize}
-
-\item Interazione con il servizio di sottoscrizione nell'ambiente NAV
-\begin{itemize}
-\item tramite esternazione di una codeunit come web service SOAP
-\end{itemize}
-\end{itemize}
-\end{frame}
-\begin{frame}
-\frametitle{Client NAV}
-\includegraphics[width=1\textwidth]{images/NAVClient.png}
-\end{frame}
-
-\begin{frame}
-\frametitle{Class Diagram Client 1}
-\includegraphics[width=0.6\textwidth]{images/ClassDiagramParte1.png}
-\end{frame}
-
-\begin{frame}
-\frametitle{Class Diagram Client 2}
-\includegraphics[width=0.6\textwidth]{images/ClassDiagramParte2.png}
-\end{frame}
-
-\begin{frame}
-\frametitle{Ambiente di sviluppo (C/SIDE) NAV}
-\includegraphics[width=1\textwidth]{images/NAVDevelopmentEnvironment.png}
-\end{frame}
-
-
-\begin{frame}
-\frametitle{Lista delle funzioni della codeunit}
-\includegraphics[width=1\textwidth]{images/NAVFunctionList.png}
-\end{frame}
-
-
-\begin{frame}
-\frametitle{Lista PLC}
-\includegraphics[width=1\textwidth]{images/PLCList.png}
-\end{frame}
-
-\begin{frame}
-\frametitle{PLC Assignment List}
-\includegraphics[width=1\textwidth]{images/PLCAssignmentList.png}
-\end{frame}
-
-
-\begin{frame}
-\frametitle{Lista con i parametri}
-\includegraphics[width=1\textwidth]{images/MachineParameter.png}
-\end{frame}
-
-\begin{frame}
-\frametitle{Pagina del token}
-\includegraphics[width=1\textwidth]{images/tokenpage.png}
-\end{frame}
-
-
-
-\begin{frame}
-\frametitle{PLC Reading List}
-\includegraphics[width=1\textwidth]{images/PLCReadingList.png}
-\end{frame}
-
-
-\begin{frame}
-\frametitle{Metodo SetMeasurementPLC}
-\includegraphics[width=1\textwidth]{images/NAVSetMesurament.png}
-\end{frame}
-
-
-\begin{frame}
-\frametitle{NAV servizi web}
-\includegraphics[width=1\textwidth]{images/NAVServiziWeb.png}
-\end{frame}
-
-
-\begin{frame}
-\frametitle{NAV SubscriptionPage}
-\includegraphics[width=1\textwidth]{images/NAVSubscriptionPage.png}
-\end{frame}
-
-\begin{frame}
-\frametitle{Metodo PushMeasurement 1}
-\includegraphics[width=1\textwidth]{images/NAVPushMeasuraments1.png}
-\end{frame}
-
-\begin{frame}
-\frametitle{Metodo PushMeasurement 2}
-\includegraphics[width=1\textwidth]{images/NAVPushMeasuraments2.png}
-\end{frame}
-
-\begin{frame}
-\frametitle{Metodo PushMeasurement 3}
-\includegraphics[width=1\textwidth]{images/NAVPushMeasuraments3.png}
-\end{frame}
-
 \end{document}
