@@ -17,51 +17,24 @@
 	\usebeamertemplate{title page}
 \end{frame}
 
-
 \begin{frame}
-\frametitle{LS Genio Platform}
+\frametitle{Obiettivi}
 \begin{itemize}
-	\item Espone servizi REST per letture di sensori
+	\item Piattaforma REST indipendente da sorgenti dati
 	\begin{itemize}
-		\item Ultima lettura di un sensore
-		\item Letture di una certa settimana
-		\item Letture di un certo mese
-		\item Letture di determinati campi dei sensori
-	\end{itemize}
-	\item Valori dei sensori letti dai PLC
-	\begin{itemize}
-		\item Convertiti in record e inseriti nel database
-	\end{itemize}
-	\item Servizio di sottoscrizione con notifiche PUSH
-	\begin{itemize}
-		\item Debolmente accoppiato grazie ad Apache ActiveMQ
-	\end{itemize}
-	\item Integra il servizio di sottoscrizione con Dynamics NAV
-	\begin{itemize}
-		\item Utilizzo dei web services SOAP offerti da NAV
-	\end{itemize}
-	\item Indipendente da sorgenti dati e formato dei dati
-	\begin{itemize}
-		\item Grazie a classi astratte, interfacce e Apache Avro
-	\end{itemize}
-	
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-	\frametitle{LS Genio Platform cont.}
-	\begin{itemize}
+		\item Autenticazione tramite token
 		\item Interfaccia web
-		\begin{itemize}
-			\item Pagina per la registrazione delle applicazioni
-			\item Pagina per la gestione delle richieste
-			\item Pagina per la gestione dei servizi attivi per gli utenti
-		\end{itemize}
+	\end{itemize}
+	\item Servizio di sottoscrizione "subscribe"
+	\begin{itemize}
+		\item Notifica dei messaggi PUSH
+	\end{itemize}
+	\item Integrazione dei servizi con NAV
 	\item Servizio di monitoraggio dei dati
 	\begin{itemize}
 		\item Controllo valore oltre soglia
 	\end{itemize}
-	\end{itemize}
+\end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -82,26 +55,6 @@
 \begin{frame}
 \frametitle{Esempio valori di ritorno di un servizio}
 \includegraphics[width=0.6\textwidth]{images/Postman1.png}
-\end{frame}
-
-\begin{frame}
-\frametitle{Subscribe Rule}
-\begin{itemize}
-\item Messaggio JSON che il servizio di sottoscrizione si aspetta di ricevere
-\item L'utente specifica la condizione
-\begin{itemize}
-\item Nome e IP applicazione
-\item Coda o topic di ActiveMQ
-\item Rule Record
-\begin{itemize}
-\item Nome tabella da interrogare
-\item Lista dei campi dei quali monitorarne i cambiamenti
-\item Espressione CRON
-\item Clausola where
-
-\end{itemize}
-\end{itemize}
-\end{itemize}
 \end{frame}
 
 \begin{frame}
