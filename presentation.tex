@@ -19,62 +19,157 @@
 
 \begin{frame}
 	\frametitle{Sommario}
-	L'obiettivo di questa tesi è stato la realizzazione di una piattaforma REST che restituisce misurazioni fatte da sensori collegati a macchinari utensili. La natura delle misurazioni è descritta da una ontologia. Parte del progetto è stata l'integrazione di questi servizi con il gestionale NAV. La piattaforma deve anche visualizzare dati attraverso un grafico dinamico e poter applicare un controllo di superamento di una soglia. Tutti gli obiettivi prefissati sono stati raggiunti, affrontando piccole difficoltà implementative, grazie ai software utilizzati.
+	L'obiettivo di questa tesi è stato la realizzazione di una piattaforma indipendente per il monitoraggio di macchine utensili che integrasse in maniera trasparente le applicazioni e i PLC. I dati che la piattaforma gestisce sono descritti in maniera semantica da una ontologia. Parte del progetto è stata l'integrazione di questi servizi con il gestionale NAV. La piattaforma offre anche un servizio di streaming data visualization per il real time monitoring e il controllo di superamento di una soglia. Tutti gli obiettivi prefissati sono stati raggiunti, affrontando piccole difficoltà implementative, grazie ai software utilizzati.
 \end{frame}
 
 \begin{frame}
 \frametitle{Obiettivi}
 \begin{itemize}
-	\item Piattaforma REST indipendente da sorgenti dati
+	\item Sviluppo di una piattaforma indipendente
 	\begin{itemize}
-		\item Autenticazione tramite token
-		\item Interfaccia web
+		\item Monitoraggio di macchine utensili
+		\item Integrazione tra applicazioni e PLC
 	\end{itemize}
-	\item Servizio di sottoscrizione "subscribe"
+	\item Piattaforma come mash-up
 	\begin{itemize}
-		\item Notifica dei messaggi PUSH
+		\item Diversi componenti integrati tra loro
 	\end{itemize}
-	\item Integrazione dei servizi con NAV
-	\item Servizio di monitoraggio dei dati
-	\begin{itemize}
-		\item Controllo valore oltre soglia
-	\end{itemize}
+	%\item Servizio di sottoscrizione "subscribe"
+	%\begin{itemize}
+	%	\item Notifica dei messaggi PUSH
+	%\end{itemize}
+	%\item Integrazione dei servizi con NAV
+	%\item Servizio di monitoraggio dei dati
+	%\begin{itemize}
+	%	\item Controllo valore oltre soglia
+	%\end{itemize}
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Architettura piattaforma}
-\includegraphics[width=0.9\textwidth]{images/architettura_piattaforma.png}
+\frametitle{LS Genio Mash-up}
+\framesubtitle{Idea Architetturale}
+%\textbf{Idea Architetturale} 
+\begin{columns}[T] % align columns
+	\begin{column}{.52\textwidth}
+		\begin{itemize}
+			\item Architettura orientata ai servizi REST
+			\item Interfacce di comunicazione ben definite (JSON-ISO 19156:2011) 
+			\item Subscribe per l'event listening (MOM ActiveMQ)
+			\item Gestione della semantica delle misurazioni
+			\item Architettura n-tier 
+		\end{itemize}
+	\end{column}%
+	\hfill%
+	\begin{column}{.48\textwidth}
+		\includegraphics[width=0.9\textwidth]{images/architettura_piattaforma.png}
+	\end{column}%
+\end{columns}
 \end{frame}
 
 \begin{frame}
-\frametitle{Pagina catalogo Smart Object}
-\includegraphics[width=1\textwidth]{images/SmartObjectsPlatform.png}
+\frametitle{LS Genio Mash-up}
+\framesubtitle{Gestione (GUI)}
+\begin{columns}[T] % align columns
+	\begin{column}{.3\textwidth}
+		
+		\begin{itemize}
+			{\tiny
+				
+				\item \textbf{Interfaccia web catalogo Smart Object}
+				
+				\begin{itemize}
+					{\tiny
+						\item Permette agli utenti di informarsi sulle chiamate dei servizi
+						\item Descrive la misura rappresentata dai campi della tabella in Genio
+					}
+				\end{itemize}
+				
+				%\item Interfaccia web gestione richieste
+				%\item Interfaccia web gestione servizi utenti
+				%\item Interfaccia web per il real time monitoring
+				%\item Interfaccia web per la gestione della soglia
+			}
+		\end{itemize}
+		
+	\end{column}%
+	\hfill%
+	\begin{column}{.66\textwidth}
+		\includegraphics[width=0.9\textwidth]{images/SmartObjectsPlatform.png}
+	\end{column}%
+\end{columns}
 \end{frame}
 
 \begin{frame}
-\frametitle{Esempio valori di ritorno di un servizio}
-\includegraphics[width=0.8\textwidth]{images/Postman1-corretto.png}
+\frametitle{LS Genio Mash-up}
+\framesubtitle{Valori di ritorno di getlastmeasure}
+\begin{columns}[T] % align columns
+	\begin{column}{.38\textwidth}
+		\begin{itemize}
+			\small
+			\item Utilizzo di ontologie per dare semantica ai messaggi, secondo lo standard ISO 19156:2011
+		\end{itemize}
+		
+	\end{column}%
+	\hfill%
+	\begin{column}{.58\textwidth}
+		\includegraphics[width=1\textwidth]{images/Postman1-corretto.png}
+	\end{column}%
+\end{columns}
+
 \end{frame}
 
 \begin{frame}
-\frametitle{Subscribe Rule di una applicazione}
-\includegraphics[width=0.6\textwidth]{images/subscribe-json-1.png}
+\frametitle{LS Genio Mash-up}
+\framesubtitle{Esempio messaggio di subscribe}
+\begin{columns}[T] % align columns
+	\begin{column}{.38\textwidth}
+		\begin{itemize}
+			\item Regola di subscribe
+			\begin{itemize}
+				\item Campi del database
+				\item Intervallo CRON
+				\item Clausola where
+			\end{itemize}
+		\end{itemize}
+		
+	\end{column}%
+	\hfill%
+	\begin{column}{.58\textwidth}
+		\includegraphics[width=1\textwidth]{images/subscribe-json-1.png}
+	\end{column}%
+\end{columns}
 \end{frame}
 
 \begin{frame}
-\frametitle{Pagina web per il grafico del monitoraggio}
-\includegraphics[width=1\textwidth]{images/grafico-zk.png}
+\frametitle{Streaming data visualization}
+\framesubtitle{Interfaccia web per il real time monitoring}
+\begin{columns}[T] % align columns
+	\begin{column}{.3\textwidth}
+		\begin{itemize}
+			\small
+			\item I dati che hanno una annotazione associata possono essere visualizzati
+			\item PLC e campo come parametri di selezione
+			\item Possibilità di avviare il controllo della soglia
+		\end{itemize}
+	\end{column}%
+	\hfill%
+	\begin{column}{.66\textwidth}
+		\includegraphics[width=1\textwidth]{images/grafico-zk.png}
+	\end{column}%
+\end{columns}
+
 \end{frame}
 
 \begin{frame}
-\frametitle{Codice Job Flink}
+\frametitle{Streaming data visualization}
+\framesubtitle{Codice Job Flink}
 \includegraphics[width=1\textwidth]{images/flink-job.png}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Conclusioni}
-	Questo progetto ha mostrato quanta innovazione e benefici porti alle aziende implementare i concetti introdotti dall’Industria 4.0, tra i quali IoT e Big Data sono le componenti principali.
+	Questo progetto ha mostrato quanta innovazione e benefici porti alle aziende implementare i concetti introdotti dall’Industria 4.0, tra i quali IoT e Big Data sono le componenti principali. La possibilità di monitorare l'andamento dei macchinari in produzione non solo aumenta l'efficienza del processo produttivo ma aumenta anche la qualità del prodotto finale.
 \end{frame}
 
 %-------------------------inizio client-----------------------------
