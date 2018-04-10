@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.13)  10 APR 2018 18:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.13)  10 APR 2018 20:28
 entering extended mode
 **./presentation.tex
 (presentation.tex
@@ -942,16 +942,16 @@ Overfull \vbox (77.93883pt too high) detected at line 18
 
 {C:/Users/PC/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images/front
 espizio-beamer.png>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 43.
+LaTeX Font Info:    Try loading font information for U+msa on input line 44.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 43.
+LaTeX Font Info:    Try loading font information for U+msb on input line 44.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 43.
+line 44.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\sansmathaccent\ot1mathkerncmss.fd"
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
@@ -964,7 +964,7 @@ thkerncmss.
 File: images/architettura_piattaforma.png Graphic file (type png)
 <use images/architettura_piattaforma.png>
 Package pdftex.def Info: images/architettura_piattaforma.png  used on input lin
-e 64.
+e 65.
 (pdftex.def)             Requested size: 147.86923pt x 111.78247pt.
  [3
 
@@ -973,7 +973,7 @@ e 64.
 File: images/interoperabilita-rest.png Graphic file (type png)
 <use images/interoperabilita-rest.png>
 Package pdftex.def Info: images/interoperabilita-rest.png  used on input line 9
-8.
+9.
 (pdftex.def)             Requested size: 191.68452pt x 109.53369pt.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-0.def"
@@ -984,7 +984,7 @@ File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 <images/schema-subscribe.png, id=132, 722.7pt x 343.2825pt>
 File: images/schema-subscribe.png Graphic file (type png)
 <use images/schema-subscribe.png>
-Package pdftex.def Info: images/schema-subscribe.png  used on input line 119.
+Package pdftex.def Info: images/schema-subscribe.png  used on input line 120.
 (pdftex.def)             Requested size: 205.37926pt x 97.55367pt.
  [5
 
@@ -993,7 +993,7 @@ Package pdftex.def Info: images/schema-subscribe.png  used on input line 119.
 File: images/SmartObjectsPlatform.png Graphic file (type png)
 <use images/SmartObjectsPlatform.png>
 Package pdftex.def Info: images/SmartObjectsPlatform.png  used on input line 15
-1.
+2.
 (pdftex.def)             Requested size: 203.32315pt x 110.73456pt.
  [6
 
@@ -1001,7 +1001,7 @@ Package pdftex.def Info: images/SmartObjectsPlatform.png  used on input line 15
 <images/grafico-zk.png, id=188, 1028.34187pt x 560.0925pt>
 File: images/grafico-zk.png Graphic file (type png)
 <use images/grafico-zk.png>
-Package pdftex.def Info: images/grafico-zk.png  used on input line 171.
+Package pdftex.def Info: images/grafico-zk.png  used on input line 172.
 (pdftex.def)             Requested size: 225.91615pt x 123.04124pt.
  [7
 
@@ -1019,7 +1019,7 @@ File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 File: images/MachineAssignmentList2.png Graphic file (type png)
 <use images/MachineAssignmentList2.png>
 Package pdftex.def Info: images/MachineAssignmentList2.png  used on input line 
-203.
+204.
 (pdftex.def)             Requested size: 342.2953pt x 182.42838pt.
  [11
 
@@ -1027,7 +1027,7 @@ Package pdftex.def Info: images/MachineAssignmentList2.png  used on input line
 <images/MachineReadingList.png, id=323, 1028.34187pt x 547.2947pt>
 File: images/MachineReadingList.png Graphic file (type png)
 <use images/MachineReadingList.png>
-Package pdftex.def Info: images/MachineReadingList.png  used on input line 221.
+Package pdftex.def Info: images/MachineReadingList.png  used on input line 222.
 
 (pdftex.def)             Requested size: 342.2953pt x 182.1778pt.
  [12
@@ -1036,7 +1036,7 @@ Package pdftex.def Info: images/MachineReadingList.png  used on input line 221.
 <images/ReportWEB.png, id=350, 1028.34187pt x 547.2947pt>
 File: images/ReportWEB.png Graphic file (type png)
 <use images/ReportWEB.png>
-Package pdftex.def Info: images/ReportWEB.png  used on input line 231.
+Package pdftex.def Info: images/ReportWEB.png  used on input line 232.
 (pdftex.def)             Requested size: 342.2953pt x 182.1778pt.
 
 [13
@@ -1047,7 +1047,7 @@ Package pdftex.def Info: images/ReportWEB.png  used on input line 231.
 <images/TemperatureJSON.png, id=404, 479.54156pt x 204.765pt>
 File: images/TemperatureJSON.png Graphic file (type png)
 <use images/TemperatureJSON.png>
-Package pdftex.def Info: images/TemperatureJSON.png  used on input line 303.
+Package pdftex.def Info: images/TemperatureJSON.png  used on input line 304.
 (pdftex.def)             Requested size: 342.2953pt x 146.16214pt.
  [15
 
@@ -1055,15 +1055,15 @@ Package pdftex.def Info: images/TemperatureJSON.png  used on input line 303.
 <images/TempExample2.png, id=431, 871.49118pt x 1025.95059pt>
 File: images/TempExample2.png Graphic file (type png)
 <use images/TempExample2.png>
-Package pdftex.def Info: images/TempExample2.png  used on input line 328.
+Package pdftex.def Info: images/TempExample2.png  used on input line 329.
 (pdftex.def)             Requested size: 193.39767pt x 227.66667pt.
 <images/celsius.png, id=432, 545.56764pt x 546.98471pt>
 File: images/celsius.png Graphic file (type png)
 <use images/celsius.png>
-Package pdftex.def Info: images/celsius.png  used on input line 328.
+Package pdftex.def Info: images/celsius.png  used on input line 329.
 (pdftex.def)             Requested size: 142.26378pt x 142.62997pt.
 
-Overfull \vbox (166.69016pt too high) detected at line 328
+Overfull \vbox (166.69016pt too high) detected at line 329
  []
 
 [16
@@ -1080,11 +1080,11 @@ Overfull \vbox (166.69016pt too high) detected at line 328
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 375.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 375.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 376.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 376.
  (presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 375.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 375.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 376.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 376.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
@@ -1102,7 +1102,7 @@ les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/symbols/msam7.pfb>
-Output written on presentation.pdf (17 pages, 857378 bytes).
+Output written on presentation.pdf (17 pages, 857412 bytes).
 PDF statistics:
  511 PDF objects out of 1000 (max. 8388607)
  35 named destinations out of 1000 (max. 500000)
