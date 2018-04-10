@@ -18,16 +18,12 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Sommario}
-	L'obiettivo di questa tesi è stato la realizzazione di una piattaforma indipendente per il monitoraggio di macchine utensili che integrasse in maniera trasparente le applicazioni e i PLC. I dati che la piattaforma gestisce sono descritti in maniera semantica da una ontologia. Parte del progetto è stata l'integrazione di questi servizi con il gestionale NAV. La piattaforma offre anche un servizio di streaming data visualization per il real time monitoring e il controllo di superamento di una soglia. Tutti gli obiettivi prefissati sono stati raggiunti, affrontando piccole difficoltà implementative, grazie ai software utilizzati.
-\end{frame}
-
-\begin{frame}
 \frametitle{Obiettivi}
 \begin{itemize}
 	\item Sviluppo di una piattaforma indipendente
 	\begin{itemize}
 		\item Monitoraggio di macchine utensili
+		\item PLC raccolgono dati dai sensori
 		\item Integrazione tra applicazioni e PLC
 	\end{itemize}
 	\item Piattaforma come mash-up
@@ -69,13 +65,67 @@
 
 \begin{frame}
 \frametitle{LS Genio Mash-up}
+\framesubtitle{Interoperabilità tramite servizi REST}
+\begin{columns}[T] % align columns
+	\begin{column}{.4\textwidth}
+		\begin{itemize}
+			{\tiny
+				\item API tramite servizi REST
+				\item Servizi disponibili
+				\begin{itemize}
+					\tiny
+					\item getlastmeasure
+					\item getmeasurefromto
+					\item getdetailedmeasurefromto
+					\item getmeasurelastmonth
+					\item getmeasurelastweek
+					\item getdetailedmeasurelastmonth
+					\item getdetailedmeasurelastweek
+					\item getallplc
+					\item sensordatafromfields
+					\item subscribe
+					\item unsubscribe
+				\end{itemize}
+			}
+		\end{itemize}
+		
+	\end{column}%
+	\hfill%
+	\begin{column}{.56\textwidth}
+		\includegraphics[width=1\textwidth]{images/interoperabilita-rest.png}
+	\end{column}%
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{LS Genio Mash-up}
+\framesubtitle{Schema servizio subscribe}
+\begin{columns}[T] % align columns
+	\begin{column}{.38\textwidth}
+		\begin{itemize}
+			\small
+			\item Invio della regola di subscribe
+			\item Un thread gestisce una regola
+			\item Invio dei dati in ActiveMQ quando si verifica l'evento
+			
+		\end{itemize}
+		
+	\end{column}%
+	\hfill%
+	\begin{column}{.60\textwidth}
+		\includegraphics[width=1\textwidth]{images/schema-subscribe.png}
+	\end{column}%
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{LS Genio Mash-up}
 \framesubtitle{Gestione (GUI)}
 \begin{columns}[T] % align columns
 	\begin{column}{.3\textwidth}
 		
 		\begin{itemize}
 			{\tiny
-				
 				\item \textbf{Interfaccia web catalogo Smart Object}
 				
 				\begin{itemize}
@@ -101,47 +151,6 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{LS Genio Mash-up}
-\framesubtitle{Valori di ritorno di getlastmeasure}
-\begin{columns}[T] % align columns
-	\begin{column}{.38\textwidth}
-		\begin{itemize}
-			\small
-			\item Utilizzo di ontologie per dare semantica ai messaggi, secondo lo standard ISO 19156:2011
-		\end{itemize}
-		
-	\end{column}%
-	\hfill%
-	\begin{column}{.58\textwidth}
-		\includegraphics[width=1\textwidth]{images/Postman1-corretto.png}
-	\end{column}%
-\end{columns}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{LS Genio Mash-up}
-\framesubtitle{Esempio messaggio di subscribe}
-\begin{columns}[T] % align columns
-	\begin{column}{.38\textwidth}
-		\begin{itemize}
-			\item Regola di subscribe
-			\begin{itemize}
-				\item Campi del database
-				\item Intervallo CRON
-				\item Clausola where
-			\end{itemize}
-		\end{itemize}
-		
-	\end{column}%
-	\hfill%
-	\begin{column}{.58\textwidth}
-		\includegraphics[width=1\textwidth]{images/subscribe-json-1.png}
-	\end{column}%
-\end{columns}
-\end{frame}
-
-\begin{frame}
 \frametitle{Streaming data visualization}
 \framesubtitle{Interfaccia web per il real time monitoring}
 \begin{columns}[T] % align columns
@@ -162,14 +171,8 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Streaming data visualization}
-\framesubtitle{Codice Job Flink}
-\includegraphics[width=1\textwidth]{images/flink-job.png}
-\end{frame}
-
-\begin{frame}
 	\frametitle{Conclusioni}
-	Questo progetto ha mostrato quanta innovazione e benefici porti alle aziende implementare i concetti introdotti dall’Industria 4.0, tra i quali IoT e Big Data sono le componenti principali. La possibilità di monitorare l'andamento dei macchinari in produzione non solo aumenta l'efficienza del processo produttivo ma aumenta anche la qualità del prodotto finale.
+	Questo progetto ha mostrato quanta innovazione e benefici porti alle aziende implementare i concetti introdotti dall’Industria 4.0, tra i quali sono le componenti principali l'IoT e i Big Data. La possibilità di monitorare l'andamento dei macchinari in produzione non solo aumenta l'efficienza del processo produttivo ma aumenta anche la qualità del prodotto finale.
 \end{frame}
 
 %-------------------------inizio client-----------------------------

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.13)  9 APR 2018 23:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.13)  10 APR 2018 18:43
 entering extended mode
 **./presentation.tex
 (presentation.tex
@@ -941,144 +941,134 @@ Overfull \vbox (77.93883pt too high) detected at line 18
 [1
 
 {C:/Users/PC/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images/front
-espizio-beamer.png>] ("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-0.def"
-File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
-)
-[2
-
-]
-LaTeX Font Info:    Try loading font information for U+msa on input line 47.
+espizio-beamer.png>]
+LaTeX Font Info:    Try loading font information for U+msa on input line 43.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 47.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+LaTeX Font Info:    Try loading font information for U+msb on input line 43.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 47.
+line 43.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\sansmathaccent\ot1mathkerncmss.fd"
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-[3
+[2
 
 ]
-<images/architettura_piattaforma.png, id=103, 588.1975pt x 444.66125pt>
+<images/architettura_piattaforma.png, id=77, 588.1975pt x 444.66125pt>
 File: images/architettura_piattaforma.png Graphic file (type png)
 <use images/architettura_piattaforma.png>
 Package pdftex.def Info: images/architettura_piattaforma.png  used on input lin
-e 68.
+e 64.
 (pdftex.def)             Requested size: 147.86923pt x 111.78247pt.
- [4
+ [3
 
  <./images/architettura_piattaforma.png>]
-<images/SmartObjectsPlatform.png, id=131, 1028.34187pt x 560.0925pt>
-File: images/SmartObjectsPlatform.png Graphic file (type png)
-<use images/SmartObjectsPlatform.png>
-Package pdftex.def Info: images/SmartObjectsPlatform.png  used on input line 10
-1.
-(pdftex.def)             Requested size: 203.32315pt x 110.73456pt.
+<images/interoperabilita-rest.png, id=105, 702.625pt x 401.5pt>
+File: images/interoperabilita-rest.png Graphic file (type png)
+<use images/interoperabilita-rest.png>
+Package pdftex.def Info: images/interoperabilita-rest.png  used on input line 9
+8.
+(pdftex.def)             Requested size: 191.68452pt x 109.53369pt.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-0.def"
+File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
+) [4
+
+ <./images/interoperabilita-rest.png>]
+<images/schema-subscribe.png, id=132, 722.7pt x 343.2825pt>
+File: images/schema-subscribe.png Graphic file (type png)
+<use images/schema-subscribe.png>
+Package pdftex.def Info: images/schema-subscribe.png  used on input line 119.
+(pdftex.def)             Requested size: 205.37926pt x 97.55367pt.
  [5
 
- <./images/SmartObjectsPlatform.png>]
-<images/Postman1-corretto.png, id=160, 499.11469pt x 395.22656pt>
-File: images/Postman1-corretto.png Graphic file (type png)
-<use images/Postman1-corretto.png>
-Package pdftex.def Info: images/Postman1-corretto.png  used on input line 120.
-(pdftex.def)             Requested size: 198.53189pt x 157.20734pt.
+ <./images/schema-subscribe.png>]
+<images/SmartObjectsPlatform.png, id=159, 1028.34187pt x 560.0925pt>
+File: images/SmartObjectsPlatform.png Graphic file (type png)
+<use images/SmartObjectsPlatform.png>
+Package pdftex.def Info: images/SmartObjectsPlatform.png  used on input line 15
+1.
+(pdftex.def)             Requested size: 203.32315pt x 110.73456pt.
  [6
 
- <./images/Postman1-corretto.png>]
-<images/subscribe-json-1.png, id=187, 352.31625pt x 380.17032pt>
-File: images/subscribe-json-1.png Graphic file (type png)
-<use images/subscribe-json-1.png>
-Package pdftex.def Info: images/subscribe-json-1.png  used on input line 142.
-(pdftex.def)             Requested size: 198.53189pt x 214.22813pt.
- [7
-
- <./images/subscribe-json-1.png>]
-<images/grafico-zk.png, id=215, 1028.34187pt x 560.0925pt>
+ <./images/SmartObjectsPlatform.png>]
+<images/grafico-zk.png, id=188, 1028.34187pt x 560.0925pt>
 File: images/grafico-zk.png Graphic file (type png)
 <use images/grafico-zk.png>
-Package pdftex.def Info: images/grafico-zk.png  used on input line 162.
+Package pdftex.def Info: images/grafico-zk.png  used on input line 171.
 (pdftex.def)             Requested size: 225.91615pt x 123.04124pt.
- [8
+ [7
 
  <./images/grafico-zk.png>]
-<images/flink-job.png, id=243, 531.48563pt x 252.19218pt>
-File: images/flink-job.png Graphic file (type png)
-<use images/flink-job.png>
-Package pdftex.def Info: images/flink-job.png  used on input line 168.
-(pdftex.def)             Requested size: 342.2953pt x 162.4222pt.
- [9
-
- <./images/flink-job.png>]
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-32.def"
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-) [10
+) [8
 
-] [11
+] [9
 
-] [12
+] [10
 
 ]
-<images/MachineAssignmentList2.png, id=348, 1028.34187pt x 548.0475pt>
+<images/MachineAssignmentList2.png, id=295, 1028.34187pt x 548.0475pt>
 File: images/MachineAssignmentList2.png Graphic file (type png)
 <use images/MachineAssignmentList2.png>
 Package pdftex.def Info: images/MachineAssignmentList2.png  used on input line 
-200.
+203.
 (pdftex.def)             Requested size: 342.2953pt x 182.42838pt.
+ [11
+
+ <./images/MachineAssignmentList2.png>]
+<images/MachineReadingList.png, id=323, 1028.34187pt x 547.2947pt>
+File: images/MachineReadingList.png Graphic file (type png)
+<use images/MachineReadingList.png>
+Package pdftex.def Info: images/MachineReadingList.png  used on input line 221.
+
+(pdftex.def)             Requested size: 342.2953pt x 182.1778pt.
+ [12
+
+ <./images/MachineReadingList.png>]
+<images/ReportWEB.png, id=350, 1028.34187pt x 547.2947pt>
+File: images/ReportWEB.png Graphic file (type png)
+<use images/ReportWEB.png>
+Package pdftex.def Info: images/ReportWEB.png  used on input line 231.
+(pdftex.def)             Requested size: 342.2953pt x 182.1778pt.
 
 [13
 
- <./images/MachineAssignmentList2.png>]
-<images/MachineReadingList.png, id=377, 1028.34187pt x 547.2947pt>
-File: images/MachineReadingList.png Graphic file (type png)
-<use images/MachineReadingList.png>
-Package pdftex.def Info: images/MachineReadingList.png  used on input line 218.
-
-(pdftex.def)             Requested size: 342.2953pt x 182.1778pt.
- [14
-
- <./images/MachineReadingList.png>]
-<images/ReportWEB.png, id=404, 1028.34187pt x 547.2947pt>
-File: images/ReportWEB.png Graphic file (type png)
-<use images/ReportWEB.png>
-Package pdftex.def Info: images/ReportWEB.png  used on input line 228.
-(pdftex.def)             Requested size: 342.2953pt x 182.1778pt.
- [15
-
- <./images/ReportWEB.png>] [16
+ <./images/ReportWEB.png>] [14
 
 ]
-<images/TemperatureJSON.png, id=457, 479.54156pt x 204.765pt>
+<images/TemperatureJSON.png, id=404, 479.54156pt x 204.765pt>
 File: images/TemperatureJSON.png Graphic file (type png)
 <use images/TemperatureJSON.png>
-Package pdftex.def Info: images/TemperatureJSON.png  used on input line 300.
+Package pdftex.def Info: images/TemperatureJSON.png  used on input line 303.
 (pdftex.def)             Requested size: 342.2953pt x 146.16214pt.
- [17
+ [15
 
  <./images/TemperatureJSON.png>]
-<images/TempExample2.png, id=484, 871.49118pt x 1025.95059pt>
+<images/TempExample2.png, id=431, 871.49118pt x 1025.95059pt>
 File: images/TempExample2.png Graphic file (type png)
 <use images/TempExample2.png>
-Package pdftex.def Info: images/TempExample2.png  used on input line 325.
+Package pdftex.def Info: images/TempExample2.png  used on input line 328.
 (pdftex.def)             Requested size: 193.39767pt x 227.66667pt.
-<images/celsius.png, id=485, 545.56764pt x 546.98471pt>
+<images/celsius.png, id=432, 545.56764pt x 546.98471pt>
 File: images/celsius.png Graphic file (type png)
 <use images/celsius.png>
-Package pdftex.def Info: images/celsius.png  used on input line 325.
+Package pdftex.def Info: images/celsius.png  used on input line 328.
 (pdftex.def)             Requested size: 142.26378pt x 142.62997pt.
 
-Overfull \vbox (166.69016pt too high) detected at line 325
+Overfull \vbox (166.69016pt too high) detected at line 328
  []
 
-[18
+[16
 
- <./images/TempExample2.png> <./images/celsius.png>] [19
+ <./images/TempExample2.png> <./images/celsius.png>] [17
 
 ]
 \tf@nav=\write6
@@ -1090,31 +1080,31 @@ Overfull \vbox (166.69016pt too high) detected at line 325
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 372.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 372.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 375.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 375.
  (presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 372.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 372.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 375.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 375.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 20580 strings out of 493305
- 379718 string characters out of 3138883
- 451323 words of memory out of 3000000
- 23651 multiletter control sequences out of 15000+200000
+ 20567 strings out of 493305
+ 379556 string characters out of 3138883
+ 454323 words of memory out of 3000000
+ 23643 multiletter control sequences out of 15000+200000
  9348 words of font info for 34 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,15n,57p,800b,781s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,15n,57p,800b,835s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/symbols/msam7.pfb>
-Output written on presentation.pdf (19 pages, 919107 bytes).
+Output written on presentation.pdf (17 pages, 857378 bytes).
 PDF statistics:
- 568 PDF objects out of 1000 (max. 8388607)
- 39 named destinations out of 1000 (max. 500000)
- 114 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 511 PDF objects out of 1000 (max. 8388607)
+ 35 named destinations out of 1000 (max. 500000)
+ 109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
